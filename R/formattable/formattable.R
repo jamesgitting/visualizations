@@ -1,7 +1,6 @@
 # formattable Example ----------------------------------------------------------------------------
 # <Insert Short Description and Use Cases>
 
-
 # Libraries -----------------------------------------------------------------------------------
 library(formattable)
 library(tidyverse)
@@ -16,10 +15,10 @@ library(babynames)
 set.seed(2018)
 
 sample_data <- babynames %>% 
-  sample_n(20, replace = FALSE) %>%
-  mutate(age = as.integer(format(Sys.Date(), "%Y")) - year) %>%
-  rowid_to_column("id") %>%
-  select(id, name, sex, age)
+                  sample_n(20, replace = FALSE) %>%
+                  mutate(age = as.integer(format(Sys.Date(), "%Y")) - year) %>%
+                  rowid_to_column("id") %>%
+                  select(id, name, sex, age)
 
 formattable(sample_data,
             list(
