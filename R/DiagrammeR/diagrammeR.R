@@ -1,8 +1,5 @@
 # DiagrammeR Example ----------------------------------------------------------------------------
-# Sunburst charts can be a good visualization for sequential data.
-# One scenario is identifying user navigation of a website.
-# Using clickstream data, we can visualize paths users are taking and perhaps identifying
-# areas to improve our UI
+# <Insert Short Description and Use Cases>
 
 
 # Libraries -----------------------------------------------------------------------------------
